@@ -1,0 +1,126 @@
+/* Services Page Styles */
+.services {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 60px 10px;
+    background-color:rgb(11, 47, 80);
+  }
+  
+  .services-header h1 {
+    font-size: 36px;
+    color: #eef2f6;
+    margin-bottom: 10px;
+  }
+  
+  .services-header p {
+    font-size: 18px;
+    color: #95a5a6;
+  }
+  
+  .services-header h2 {
+    font-size: 28px;
+    color: #eef0f2;
+    margin-top: 10px;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    background-color: #5b7a99dc;
+  }
+  
+ 
+  
+  .service-card h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #0a0a0a;
+    margin-bottom: 15px;
+  }
+  
+  .service-card a {
+    font-size: 18px;
+    color: #0d0d0d;
+    text-decoration: none;
+  }
+  
+  .service-card a:hover {
+    color: #05335e;
+  }
+  
+ 
+  
+
+
+  .services-page {
+    width: 90%;
+    padding: 50px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #eef0f2;
+    border-radius: 15px;
+  }
+  
+  .container .left,
+  .container .right {
+    flex: 1;
+  }
+  
+  .container .left img,
+  .container .right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .container .right {
+    padding-left: 20px;
+  }
+  
+  .container .left h2,
+  .container .right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .container .left p,
+  .container .right p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Reverse layout for the second container */
+  .container.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .container.reverse .left {
+    padding-right: 20px;
+  }
+  

@@ -1,0 +1,64 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out the logo and nav links */
+    align-items: center; /* Vertically center the content */
+    padding: 25px 0px; /* Add some padding for spacing */
+    position: fixed; /* Fix the navbar to the top of the viewport */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar appears above the hero section */
+    background: rgba(49, 84, 116, 0.5); /* Semi-transparent background for overlay effect */
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spacing between nav items */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-item:hover {
+    color: lightblue; /* Change color on hover */
+    border-bottom: 2px solid lightblue; /* Add an underline effect on hover */
+}
+
+/* Active Link Indicator (Optional) */
+.nav-item.active {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+/* Mobile Responsive Navbar (Optional) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
